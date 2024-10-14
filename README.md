@@ -1,2 +1,3 @@
 # Tecnologias Web I
-Just another repository
+
+Repository for TW1 | TSIW course
