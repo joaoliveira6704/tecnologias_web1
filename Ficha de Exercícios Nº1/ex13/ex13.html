@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label>Nome:</label>
+        <input type="text">
+        <br>
+        <fieldset>
+            <Legend>Idade</Legend>
+            <input type="radio" name="idade" value="cat1">
+            <label for="cat1">&lt;18</label>
+            <input type="radio" name="idade" value="cat2">
+            <label for="cat2">19-35</label>
+            <input type="radio" name="idade" value="cat3">
+            <label for="cat3">36-48</label>
+            <input type="radio" name="idade" value="cat4">
+            <label for="cat4">&gt;49</label>    
+        </fieldset>
+        <label>Profissão:</label>
+        <input type="text">
+        <label>País:</label>
+        <select name="country" id="country">
+            <option value="pt">Portugal</option>
+            <option value="other">Outro</option>
+        </select>
+        <fieldset>
+            <legend>Interests</legend>
+            <input type="checkbox" value="photography">
+            <label for="photography">Photography</label>
+            <input type="checkbox" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" value="cinema">
+            <label for="cinema">Cinema</label>
+            <input type="checkbox" value="Computers">
+            <label for="computers">Computers</label>
+        </fieldset>
+        <label>Como nos descobriu:</label>
+        <textarea name="findus" id="findus"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
