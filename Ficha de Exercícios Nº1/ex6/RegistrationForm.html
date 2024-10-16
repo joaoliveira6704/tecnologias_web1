@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 6</title>
+  </head>
+  <body>
+    <form action=" https://www.webucator.com/materials/htm101/" method="post">
+      <label>User name:</label>
+      <input type="text" name="username" id="username" />
+      <br />
+      <label>Password:</label>
+      <input type="password" name="pw" id="pw" />
+      <input
+        type="hidden"
+        name="emailMe"
+        id="emailMe"
+        value="40240391@esmad.ipp.pt"
+      />
+      <br />
+      <label>Gender:</label>
+      <input type="radio" name="gender" id="genderm" value="m" />
+      <label for="genderm">Male</label>
+      <input type="radio" name="gender" id="genderf" value="f" />
+      <label for="genderf">Female</label>
+      <br />
+      <label>Click to accept our terms</label>
+      <input type="checkbox" name="terms" id="terms" />
+      <br />
+      <label>Where did you here about us?</label>
+      <select name="referral" id="referral">
+        <option value="0">--Please Choose--</option>
+        <option value="wom">Word of Mouth</option>
+        <optgroup label="Search Engine">
+          <option value="Google">Google</option>
+          <option value="Yahoo">Yahoo!</option>
+          <option value="MSN">MSN</option>
+        </optgroup>
+      </select>
+      <br />
+      <textarea name="comments" id="comments" cols="40" rows="10"></textarea>
+      <br />
+      <button type="submit" value="Register">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
