@@ -1,9 +1,8 @@
 # Tecnologias Web I
 
-Repository for Tecnologias Web 1 | TSIW course
+Repository for Tecnologias Web | TSIW course
 
-## Author: João Oliveira
-
-## Student Number: 40240391
-
-## Course: TSIW
+**Author:** João Oliveira
+**Student Number:** 40240391
+**Class:** Tecnologias Web
+**Course:** TSIW
