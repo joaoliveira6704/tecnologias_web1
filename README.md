@@ -1,4 +1,4 @@
-# Tecnologias Web I
+# Tecnologias Web
 
 Repository for Tecnologias Web | TSIW course
 
