@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 3</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <label for="name">Nome:</label>
+      <input
+        type="text"
+        placeholder="Escreva o seu nome"
+        minlength="3"
+        required
+      />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Escreva o seu email" required />
+      <br />
+      <label for="idade">Idade:</label>
+      <input type="text" required />
+      <br />
+      <label for="birthdate">Data de Nascimento:</label>
+      <input type="date" />
+      <br />
+      <label for="nationality">Nacionalidade:</label>
+      <select>
+        <option value="pt">Portugal</option>
+        <option value="other">Outro</option>
+      </select>
+      <br />
+      <label for="password">Palavra-passe:</label>
+      <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,16}" required />
+      <br />
+      <button type="submit">Submeter formulário</button>
+    </form>
+  </body>
+</html>
