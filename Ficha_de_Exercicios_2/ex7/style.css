@@ -1,0 +1,62 @@
+div{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset{
+    border: 1px solid;
+    width: fit-content;
+}
+
+/*Exercício A*/
+.exA{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 27.5px;
+}
+
+.listconditions{
+    padding-left: 1.2em;
+}
+
+.red-text{
+    color: red;
+}
+
+/*Exercício B*/
+.exB{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.send-message{
+    color: blue;
+}
+
+/*Exercício C*/
+.exC{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 10px;
+}
+
+.nikeshoe{
+    width: 700px;
+    height: 800px;
+}
+
+.materialtype{
+    color: rgb(158, 103, 0);
+    font-weight:640;
+}
+
+.productname{
+    font-weight: 640;
+}
+
+.product-type{
+    color: rgb(109, 109, 109);
+}
+
+.price{
+    line-height: 35px;
+    font-weight: 640;
+}
