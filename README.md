@@ -1,6 +1,6 @@
 # Tecnologias Web
 
-Repository for Tecnologias Web | TSIW course
+Repository for Tecnologias Web | TSIW course 1
 
 **Author:** João Oliveira
 
