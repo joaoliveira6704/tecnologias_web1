@@ -1,0 +1,44 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  background: lightblue;
+  height: 20vh;
+  display: flex;
+}
+
+#main {
+  display: flex;
+  flex: 1;
+  height: 60vh; /* Height for the main content area */
+}
+
+#main > nav {
+  background: lightgray;
+  flex-basis: 20vw;
+  display: flex;
+}
+
+#main > article {
+  flex: 1;
+  background: white;
+  display: flex;
+}
+
+#main > aside {
+  background: lightgreen;
+  flex-basis: 20vw;
+  display: flex;
+}
+
+footer {
+  background: lightblue;
+  height: 20vh;
+  display: flex;
+}
