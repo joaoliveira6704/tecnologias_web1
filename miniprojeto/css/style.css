@@ -33,8 +33,17 @@ header {
   background-color: #fff;
 }
 
-.navbar li a:hover {
+.navitem:hover {
   background-color: #111;
+  color: white;
+}
+
+.activepage {
+  background-color: #c2c2c2;
+}
+
+.activepage:hover {
+  background-color: #7a7a7a;
   color: white;
 }
 
@@ -64,4 +73,96 @@ footer {
 
 main {
   text-align: center;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  border: 2px solid;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.content {
+  margin-left: 30px;
+  text-align: left;
+  width: 80%;
+}
+
+.viewbookbtn {
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  width: 200px;
+  height: 100px;
+  font-weight: bold;
+  background-color: rgb(255, 196, 0);
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.viewbookbtn:hover {
+  background-color: rgb(161, 97, 0);
+  color: white;
+}
+
+.book_title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.book_description {
+  margin-right: 70px;
+  text-align: justify;
+}
+
+.bookcover {
+  margin-left: 20px;
+  height: 225px;
+  width: 150px;
+}
+
+.genre {
+  display: flex;
+}
+
+.genreText {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.genreType {
+  color: rgb(97, 97, 97);
+}
+
+.pagetitle {
+  margin-bottom: 60px;
+  font-size: 60px;
+}
+
+.bookpage {
+  display: flex;
+}
+
+.details {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.author {
+  display: flexbox;
+  text-align: left;
+  font-size: 25px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.booktextdetails {
+  position: relative;
+  margin-top: 100px;
+  font-size: 20px;
+  text-align: justify;
 }
