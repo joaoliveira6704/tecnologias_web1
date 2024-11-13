@@ -19,21 +19,61 @@
       <hr />
     </header>
     <main>
-      <h1>TESTE!</h1>
-      <fieldset>
-        <form action="#" method="post" class="requestbook">
-          <label>Nome do Livro: </label>
-          <input type="text" />
-          <br />
-          <label>Autor(a): </label>
-          <input type="text" />
-          <br />
-          <label>Editora: </label>
-          <input type="text" />
-          <br />
-          <button type="submit">Enviar</button>
-        </form>
-      </fieldset>
+      <h1>Pedir Livro</h1>
+      <p class="list-left">
+        Tem um título em mente que gostaria de ver na nossa biblioteca? Estamos
+        sempre a expandir o nosso acervo e queremos ouvir a sua opinião! Se está
+        à procura de um livro específico ou acha que uma obra merece estar
+        disponível para todos, preencha o formulário abaixo e faremos o possível
+        para adicioná-lo.
+      </p>
+      <section class="list-left">
+        <h2>Como funciona o pedido de livros:</h2>
+        <ol>
+          <li class="listline">
+            Preencha o formulário com os dados do livro que deseja sugerir,
+            incluindo título, autor, editora e género e, se possível, o seu
+            email;
+          </li>
+          <li>
+            Envie o pedido, e entraremos em contacto assim que tivermos
+            novidades sobre a sua sugestão;
+          </li>
+        </ol>
+      </section>
+      <div class="form-container">
+        <fieldset>
+          <div>
+            <form action="#" method="post">
+              <label>Nome do Livro</label>
+              <br />
+              <input type="text" />
+              <br />
+              <br />
+              <label>Autor(a)</label>
+              <br />
+              <input type="text" required />
+              <br />
+              <br />
+              <label>Editora</label>
+              <br />
+              <input type="text" required />
+              <br />
+              <br />
+              <label>Género</label>
+              <br />
+              <input type="text" required />
+              <br />
+              <br />
+              <label>Email</label>
+              <br />
+              <input type="email" />
+              <br />
+              <button type="submit" class="sbmt-btn">Enviar</button>
+            </form>
+          </div>
+        </fieldset>
+      </div>
     </main>
     <footer>
       <hr />
