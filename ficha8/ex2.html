@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 2</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+      body {
+        background-color: #ffffff;
+        font-family: "Inter", sans-serif;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section {
+        padding: 80px;
+        max-width: 1200px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+        gap: 30px;
+        justify-items: center;
+      }
+
+      .card {
+        text-align: center;
+        max-width: 295px;
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover img {
+        transform: scale(1.05);
+      }
+
+      .name {
+        margin: 16px 0 6px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .price {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 400;
+        transition: color 0.3s ease;
+      }
+
+      .card:hover .price {
+        color: #3563e9;
+      }
+
+      @media (max-width: 768px) {
+        section {
+          padding: 40px;
+        }
+
+        .grid {
+          gap: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="grid">
+        <div class="card">
+          <img src="/ficha8/Images/Ex02/1.png" alt="Produto 1" />
+          <div class="name">Produto 1</div>
+          <div class="price">$145</div>
+        </div>
+        <div class="card">
+          <img src="/ficha8/Images/Ex02/2.png" alt="Produto 2" />
+          <div class="name">Produto 2</div>
+          <div class="price">$180</div>
+        </div>
+        <div class="card">
+          <img src="/ficha8/Images/Ex02/3.png" alt="Produto 3" />
+          <div class="name">Produto 3</div>
+          <div class="price">$120</div>
+        </div>
+        <div class="card">
+          <img src="/ficha8/Images/Ex02/4.png" alt="Produto 4" />
+          <div class="name">Produto 4</div>
+          <div class="price">$240</div>
+        </div>
+        <div class="card">
+          <img src="/ficha8/Images/Ex02/5.png" alt="Produto 5" />
+          <div class="name">Produto 5</div>
+          <div class="price">$180</div>
+        </div>
+        <div class="card">
+          <img src="/ficha8/Images/Ex02/6.png" alt="Produto 6" />
+          <div class="name">Produto 6</div>
+          <div class="price">$130</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
