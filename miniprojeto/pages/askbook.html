@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,37 +42,57 @@
         </ol>
       </section>
       <div class="form-container">
-        <fieldset>
-          <div>
-            <form action="#" method="post">
-              <label>Nome do Livro</label>
-              <br />
-              <input type="text" />
-              <br />
-              <br />
-              <label>Autor(a)</label>
-              <br />
-              <input type="text" required />
-              <br />
-              <br />
-              <label>Editora</label>
-              <br />
-              <input type="text" required />
-              <br />
-              <br />
-              <label>Género</label>
-              <br />
-              <input type="text" required />
-              <br />
-              <br />
-              <label>Email</label>
-              <br />
-              <input type="email" />
-              <br />
-              <button type="submit" class="sbmt-btn">Enviar</button>
-            </form>
-          </div>
-        </fieldset>
+        <form action="index.html">
+          <fieldset>
+            <legend>Formulário de Sugestão de Livro</legend>
+
+            <label for="book-title">Nome do Livro</label>
+            <input
+              type="text"
+              id="book-title"
+              name="book-title"
+              placeholder="Insira o título do livro"
+              required
+            />
+
+            <label for="author">Autor(a)</label>
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Nome do autor"
+              required
+            />
+
+            <label for="publisher">Editora</label>
+            <input
+              type="text"
+              id="publisher"
+              name="publisher"
+              placeholder="Nome da editora"
+              required
+            />
+
+            <label for="genre">Género</label>
+            <input
+              type="text"
+              id="genre"
+              name="genre"
+              placeholder="Ex.: Ficção, Romance"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email (opcional)"
+            />
+
+            <button type="submit" class="sbmt-btn">Enviar</button>
+          </fieldset>
+        </form>
       </div>
     </main>
     <footer>
