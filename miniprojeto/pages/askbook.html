@@ -6,9 +6,21 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="image/x-icon" href="./assets/logo.ico" />
     <title>Páginas Livres - Pedir Livro</title>
+    <style>
+      /* Esconder o parágrafo com o id "success-message" */
+      #success-message {
+        display: none;
+      }
+
+      /* Tornar o parágrafo visível quando o formulário é submetido */
+      :target #success-message {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <header>
+      <!--Barra de Navegação-->
       <ul class="navbar">
         <li class="logo"><a href="index.html">PÁGINAS LIVRES</a></li>
         <li><a class="navitem" href="index.html">Início</a></li>
@@ -18,16 +30,18 @@
       </ul>
       <hr />
     </header>
+    <!--Conteúdo Principal da Página-->
     <main>
       <h1>Pedir Livro</h1>
-      <p class="list-left">
+      <p class="aboutus-style">
         Tem um título em mente que gostaria de ver na nossa biblioteca? Estamos
         sempre a expandir o nosso acervo e queremos ouvir a sua opinião! Se está
         à procura de um livro específico ou acha que uma obra merece estar
         disponível para todos, preencha o formulário abaixo e faremos o possível
         para adicioná-lo.
       </p>
-      <section class="list-left">
+      <!--Secção onde é apresentada uma lista com os passos para pedir um livro-->
+      <section class="aboutus-style">
         <h2>Como funciona o pedido de livros:</h2>
         <ol>
           <li class="listline">
@@ -41,8 +55,9 @@
           </li>
         </ol>
       </section>
+      <!--Formulário para o utilizador pedir um livro-->
       <div class="form-container">
-        <form action="index.html">
+        <form action="#submitted" method="GET">
           <fieldset>
             <legend>Formulário de Sugestão de Livro</legend>
 
@@ -81,7 +96,7 @@
               placeholder="Ex.: Ficção, Romance"
               required
             />
-
+            <!--O email não usa o atributo "required" visto que é opcional-->
             <label for="email">Email</label>
             <input
               type="email"
@@ -92,9 +107,14 @@
 
             <button type="submit" class="sbmt-btn">Enviar</button>
           </fieldset>
+          <!-- Mensagem a ser apresentada quando o formulário é submetido-->
+          <div id="submitted">
+            <p id="success-message">O pedido foi feito com sucesso!</p>
+          </div>
         </form>
       </div>
     </main>
+    <!--Footer-->
     <footer>
       <hr />
       <ul class="footer">
