@@ -114,6 +114,14 @@ transições suaves e limita a altura dos elementos do livro */
   overflow: hidden;
 }
 
+/* Adicionar enfeito de transição responsivo aos elementos do livro */
+.book p,
+h2,
+img,
+button {
+  transition: all 0.5s ease-in-out;
+}
+
 /* Aplica efeito de hover, eleva o cartão 5px e adiciona sombra */
 .book:hover {
   transform: translateY(-5px);
@@ -209,6 +217,13 @@ adiciona "..." para o texto excedente */
 .bookpage {
   display: flex;
   margin-top: 20px;
+}
+
+.bookpage p,
+li,
+span,
+img {
+  transition: all 0.3s ease-in-out;
 }
 
 /* Configuração dos detalhes do livro */
@@ -450,6 +465,7 @@ ol {
   span {
     font-size: 15px;
     text-align: justify;
+    transition: all 0.3s ease-in-out;
   }
 }
 
