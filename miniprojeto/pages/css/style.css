@@ -117,6 +117,7 @@ transições suaves e limita a altura dos elementos do livro */
 /* Adicionar enfeito de transição responsivo aos elementos do livro */
 .book p,
 h2,
+h1,
 img,
 button {
   transition: all 0.5s ease-in-out;
