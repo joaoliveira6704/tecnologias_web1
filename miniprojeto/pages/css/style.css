@@ -1,17 +1,20 @@
-/* Estilo global */
+/* Define o estilo global para o corpo da página,
+configura uma margem lateral e a fonte padrão */
 body {
   padding-left: 1%;
   padding-right: 1%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Adicionar 10px de espaçamento em baixo do cabeçalho */
+/* Adiciona 10px de espaçamento na parte inferior do cabeçalho */
 header {
   padding-bottom: 10px;
 }
 
-/* Barra de Navegação */
-/* Remove aparência de lista, margem, padding e evita que os elementos passem o tamanho do div  */
+/* ---------------- Barra de Navegação ---------------- */
+
+/* Remove os estilos de lista padrão da barra de navegação,
+além de margens, paddings, e controla a largura dos elementos */
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -19,11 +22,13 @@ header {
   overflow: hidden;
 }
 
-/* Apresenta os elementos em linha */
+/* Exibe os elementos da barra de navegação em linha */
 .navbar li {
   display: inline-flex;
 }
 
+/* Estiliza os links da barra de navegação com padding,
+tamanho de fonte e cor padrão */
 .navbar li a {
   display: block;
   text-align: center;
@@ -34,60 +39,68 @@ header {
   color: black;
 }
 
-.logo li a:hover {
-  background-color: #fff;
-}
-
+/* Muda o fundo e a cor do texto dos elementos
+   da bara de navegação ao passar o cursor */
 .navitem:hover {
   background-color: #111;
   color: white;
 }
 
-/* Torna o fundo do elemento na barra de navegação
- correspondente à página ativa numa cor diferente das restantes */
+/* Destaca a página ativa na navegação com um fundo diferente */
 .activepage {
   background-color: #c2c2c2;
 }
 
-/* Muda o fundo do elemento na barra de navegação quando
-o cursor passa por cima */
+/* Altera o fundo e a cor do texto ao passar o cursor na página ativa */
 .activepage:hover {
   background-color: #7a7a7a;
   color: white;
 }
 
-/* Torna o texto para apresentar o logótipo em bold */
+/* Torna o texto do logotipo em negrito */
 .logo {
   font-weight: bold;
 }
 
-/* Remove o estilo predefinido da lista */
+/* ---------------- footer ---------------- */
+
+/* Remove estilos de lista padrão e define posição e espaçamento do footer */
 .footer {
   list-style-type: none;
   position: absolute;
   padding-bottom: 30px;
 }
 
+/* Remove sublinhados e define a cor padrão para links no footer */
 .footer li a {
   text-decoration: none;
   color: rgb(107, 107, 107);
 }
 
+/* Altera a cor ao passar o cursor sobre os links do footer */
 .footer li a:hover {
   text-decoration: none;
   color: rgb(161, 161, 161);
 }
 
+/* Adiciona espaçamento interno na parte superior do footer */
 footer {
   padding-top: 20px;
 }
 
+/* ---------------- Seção Principal ---------------- */
+
+/* Centraliza o texto, define margens laterais de 5% */
 main {
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
 }
 
+/* ---------------- Estilo dos Livros ---------------- */
+
+/* Organiza o conteúdo em linha, define as bordas arredondadas,
+transições suaves e limita a altura dos elementos do livro */
 .book {
   display: flex;
   align-items: center;
@@ -101,11 +114,14 @@ main {
   overflow: hidden;
 }
 
+/* Aplica efeito de hover, eleva o cartão 5px e adiciona sombra */
 .book:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Configura as imagens de capa dos livros com dimensões fixas
+e cantos arredondados */
 .bookcover {
   margin-left: 20px;
   height: 205px;
@@ -113,6 +129,7 @@ main {
   border-radius: 4px;
 }
 
+/* Define a estrutura do conteúdo do livro */
 .content {
   flex: 1;
   margin-left: 30px;
@@ -122,12 +139,15 @@ main {
   overflow: hidden;
 }
 
+/* Estiliza o título dos livros */
 .book_title {
   font-size: 24px;
   font-weight: bold;
   margin: 0 0 10px;
 }
 
+/* Limita o número de linhas da descrição do livro, 
+adiciona "..." para o texto excedente */
 .book_description {
   flex: 1;
   margin: 0;
@@ -141,11 +161,13 @@ main {
   margin-right: 20px;
 }
 
+/* Define o estilo para o género dos livros */
 .genre {
   display: flex;
   align-items: center;
 }
 
+/* Estilo para rótulo e valor do gênero */
 .genreText {
   font-weight: bold;
   margin-right: 5px;
@@ -155,6 +177,7 @@ main {
   color: rgb(97, 97, 97);
 }
 
+/* Botão para visualizar livros, com design responsivo */
 .viewbookbtn {
   cursor: pointer;
   border: none;
@@ -169,26 +192,32 @@ main {
   align-self: center;
 }
 
+/* Efeito hover para o botão de visualização */
 .viewbookbtn:hover {
   background-color: rgb(161, 97, 0);
   color: white;
 }
+
+/* ---------------- Títulos e Layouts Variados ---------------- */
 
 .pagetitle {
   margin-bottom: 60px;
   font-size: 40px;
 }
 
+/* Layout e detalhes de páginas de livros */
 .bookpage {
   display: flex;
   margin-top: 20px;
 }
 
+/* Configuração dos detalhes do livro */
 .details {
   margin-left: 30px;
   margin-right: 30px;
 }
 
+/* Estilização do autor do livro */
 .author {
   display: flexbox;
   text-align: left;
@@ -199,6 +228,7 @@ main {
   font-weight: bold;
 }
 
+/* Detalhes do livro */
 .booktextdetails {
   position: relative;
   margin-top: 40px;
@@ -206,21 +236,7 @@ main {
   text-align: justify;
 }
 
-.requestbook {
-  text-align: right;
-}
-
-.aboutus-p {
-  text-align: justify;
-}
-
-.list-left {
-  text-align: justify;
-}
-
-.listline {
-  margin-bottom: 10px;
-}
+/* ---------------- Cartões ---------------- */
 
 /* Container principal para os cartões */
 .card-container {
@@ -248,18 +264,18 @@ Sobem 5px no eixo Y quando o cursor passa por cima */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Imagem do cartão a cobrir 100% da largura do espaço definido a ocupar,
-define a altura em 500px; certifica-se que cobre o espaço designado ao redimensionar
-aplica o atributo block e adiciona 4x*/
+/* Define a largura da imagem como 100% da largura do elemento pai, 
+   define a altura da imagem como 500px, garante que a imagem cobre o 
+   espaço do container e arredonda os cantos da imagem */
 .card-image img {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  display: block;
   border-radius: 4px;
 }
 
-/* Detalhes do cartão (título, botão) */
+/* Adiciona espaçamento interno de 15px, organiza o conteúdo do cartão em coluna, 
+   centraliza o conteúdo e distribui-os de forma equilibrada no eixo X */
 .card-details {
   padding: 15px;
   display: flex;
@@ -268,7 +284,8 @@ aplica o atributo block e adiciona 4x*/
   justify-content: space-between;
 }
 
-/* Título do cartão */
+/* Define o tamanho da fonte do título do cartão, adiciona uma margem de 10px 
+   em cima e em baixo, aplica um estilo de fonte em negrito e define a cor do texto */
 .card-title {
   font-size: 1.2rem;
   margin: 10px 0;
@@ -276,7 +293,8 @@ aplica o atributo block e adiciona 4x*/
   color: #333;
 }
 
-/* Secção do género */
+/* Adiciona uma margem no topo de 10px, organiza o conteúdo de género na mesma
+  linha e define o tamanho da fonte */
 .card-genre {
   margin-top: 10px;
   display: flex;
@@ -284,18 +302,22 @@ aplica o atributo block e adiciona 4x*/
   font-size: 0.9rem;
 }
 
-/* Rótulo do género */
+/* Aplica o estilo de fonte em negrito 
+   ao género e uma margem à direita */
 .genre-label {
   font-weight: bold;
   margin-right: 5px;
 }
 
-/* Valor do género */
+/* Define a cor do texto do valor do género */
 .genre-value {
   color: #777;
 }
 
-/* Botão de ação do cartão */
+/* Adiciona uma margem superior de 15px, define o preenchimento do botão, 
+   altera o tamanho e o peso da fonte, aplica cor de fundo e texto, arredonda 
+   os cantos, centraliza o texto, define o cursor como ponteiro e adiciona 
+   um efeito de transição no fundo */
 .card-button {
   margin-top: 15px;
   padding: 10px 15px;
@@ -311,12 +333,17 @@ aplica o atributo block e adiciona 4x*/
   width: 80%;
 }
 
-/* Efeito hover no botão */
+/* Aplica uma alteração de cor de fundo no botão quando o cursor passa sobre ele */
 .card-button:hover {
   background-color: rgb(142, 109, 0);
 }
+/* --------------------------------------------- */
 
-/* Formulário */
+/* ---------------- Formulários ---------------- */
+
+/* Define a largura máxima do formulário, centraliza-o na página, 
+   aplica espaçamento interno, cor de fundo, bordas arredondadas 
+   e uma sombra para destacar o formulário */
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -326,17 +353,22 @@ form {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Remove as bordas e o padding do fieldset */
 fieldset {
   border: none;
   padding: 0;
 }
 
+/* Define o estilo do título do formulário, aumenta o tamanho da fonte, 
+     aplica um estilo em negrito e adiciona uma margem inferior de 20px */
 legend {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
+/* Estiliza as labels, faz com que fiquem em bloco, com uma margem 
+     inferior de 8px e estiliza em negrito */
 label {
   display: block;
   margin-bottom: 8px;
@@ -344,6 +376,8 @@ label {
   font-size: 14px;
 }
 
+/* Define o estilo dos campos de entrada, tornando-os responsivos com 
+     uma largura de 100%, adiciona bordas arredondadas */
 input {
   width: 100%;
   padding: 10px;
@@ -355,12 +389,16 @@ input {
   box-sizing: border-box;
 }
 
+/* Aplica um estilo especial ao campo de entrada quando ele está em foco,
+     altera a cor da borda e aplica uma sombra que serve de "luz" */
 input:focus {
   outline: none;
   border-color: rgb(255, 196, 0);
   box-shadow: 0 0 4px rgb(255, 196, 0);
 }
 
+/* Estiliza o botão de envio, ajusta a sua largura, altura, cor de fundo, 
+     texto, bordas e aplica um estilo de cursor pointer */
 .sbmt-btn {
   display: inline-block;
   width: 100%;
@@ -374,21 +412,39 @@ input:focus {
   cursor: pointer;
 }
 
+/* Altera a cor do fundo do botão de envio quando o cursor passa sobre ele */
 .sbmt-btn:hover {
   background-color: rgb(142, 109, 0);
 }
 
+/* --------------------------------------------- */
+
+/* Alinha a lista ordenada ao centro */
+div.listorder {
+  text-align: center;
+}
+/*Alinha o texto da lista à esquerda */
+ol {
+  display: inline-block;
+  text-align: left;
+}
+
+/* Estilos para a versão mobile (tela pequena) */
 @media screen and (max-width: 1300px) {
+  /* Ajusta a imagem da página do livro, muda a largura e altura
+     e aplica um efeito de transição */
   .bookpage img {
     width: 400px;
     height: 700px;
     transition: all 0.3s ease-in-out;
   }
 
+  /* Muda o tamanho do título da página do livro */
   .bookpage h1 {
     font-size: 25px;
   }
 
+  /* Muda o tamanho da fonte do texto, lista e parágrafos */
   .bookpage p,
   li,
   span {
@@ -397,12 +453,16 @@ input:focus {
   }
 }
 
+/* Estilos para dispositivos menores */
 @media screen and (max-width: 820px) {
+  /* Ajusta a imagem da página do livro
+     e aplica um efeito de transição */
   h1 {
     font-size: 25px;
     transition: all 0.7s ease-in-out;
   }
 
+  /* --------- Ajusta o tamanho dos seletores respetivos e adiciona uma transição --------- */
   p {
     font-size: 12px;
     transition: all 0.5s ease-in-out;
@@ -422,22 +482,30 @@ input:focus {
     font-size: 10px;
     transition: all 0.5s ease-in-out;
   }
+  /* --------------------------------------------- */
 
+  /* Modifica o comportamento da barra de navegação 
+     mostra os elementos em bloco e reduz o tamanho da fonte*/
   .navbar li {
     display: block;
     font-size: 10px;
   }
 
+  /* Reduz o tamanho da fonte*/
   .navbar li a {
     font-size: 17px;
   }
 
+  /* Modifica o estilo do livro, muda o tamanho, 
+     muda o padding para 10px e adiciona um efeito de transição*/
   .book {
     height: 200px;
     padding: 10px;
     transition: all 0.5s ease-in-out;
   }
 
+  /* Muda o tamanho da margem para 10px, muda o tamanho da imagem
+     muda a curvatura da borda para 4px  */
   .bookcover {
     margin-left: 10px;
     height: 130px;
@@ -445,19 +513,27 @@ input:focus {
     border-radius: 4px;
   }
 
+  /* Muda a margem à esquerda para 20px */
   .content {
     margin-left: 20px;
   }
 
+  /* Muda a fonte do titulo do livro para 17px */
   .book_title {
     font-size: 17px;
   }
 
+  /* Muda a margem à direita e o tamanho
+     da fonte do livro para 10px */
   .book_description {
     margin-right: 10px;
     font-size: 10px;
   }
 
+  /* Muda a curvatura da borda do botão 
+     para 15px, redimensiona o botão,
+     reduz o tamanho da fonte a adiciona
+     uma margem à esquerda e direita com 15px e 5px respetivamente */
   .viewbookbtn {
     border-radius: 15px;
     width: 100px;
@@ -467,24 +543,33 @@ input:focus {
     margin-right: 5px;
   }
 
+  /* Muda o tamanho do título do formulário
+     e adiciona um efeit de transição */
   legend {
     font-size: 18px;
     transition: all 0.5s ease-in-out;
   }
 
+  /* Modifica o layout da página do livro,
+     apresenta o conteúdo em bloco e alinha
+     o texto ao centro*/
   .bookpage {
     display: block;
     text-align: center;
   }
 
+  /* Redimensiona a capa do livro e
+     adiciona um efeito de transição */
   .bookpage img {
-    width: 300px;
-    height: 470px;
+    width: 75%;
+    height: 100%;
     transition: all 0.3s ease-in-out;
   }
 }
 
+/* Estilos para dispositivos ainda menores */
 @media screen and (max-width: 530px) {
+  /* --------- Ajusta o tamanho dos seletores respetivos e adiciona uma transição --------- */
   h1 {
     font-size: 20px;
     transition: all 0.7s ease-in-out;
@@ -509,42 +594,58 @@ input:focus {
     font-size: 8px;
     transition: all 0.5s ease-in-out;
   }
+  /* ----------------------------------------- */
 
+  /* Modifica a barra de navegação para exibir
+     os elementos em bloco */
   .navbar li {
     display: block;
   }
 
+  /* Redimensiona a altura do cartão do livro
+     muda o padding para 10px e acrescenta
+     um efeito de transição */
   .book {
     height: 130px;
     padding: 10px;
     transition: all 0.5s ease-in-out;
   }
 
+  /* Muda o tamanho da imagem, a margem à esquerda
+    e a largura */
   .bookcover {
     margin-left: 5px;
     height: 100px;
     width: 60px;
   }
 
+  /* Muda a margem à esquerda e a fonte
+     do conteúdo para 10px */
   .content {
     margin-left: 10px;
     font-size: 10px;
   }
 
+  /* Muda o tamanho do titulo,
+     e retira a margem em baixo */
   .book_title {
     font-size: 12px;
     margin-bottom: 0px;
   }
 
+  /* Muda o tamanho do texto "Género" e do valor */
   .genreType,
   .genreText {
     font-size: 8px;
   }
 
+  /* Retira a margem à direita da descrição do livro */
   .book_description {
     margin-right: 0px;
   }
 
+  /* Redimensiona o botão de ver livro, muda o tamanho da fonte
+     e da margem à esquerda */
   .viewbookbtn {
     width: 80px;
     height: 20px;
@@ -552,8 +653,9 @@ input:focus {
     margin-left: 10px;
   }
 
+  /* Muda o tamanho do titulo do formulário */
   legend {
-    font-size: 18px;
+    font-size: 16px;
     transition: all 0.5s ease-in-out;
   }
 }
