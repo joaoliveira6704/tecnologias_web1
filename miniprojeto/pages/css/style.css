@@ -450,7 +450,7 @@ ol {
   /* Ajusta a imagem da página do livro, muda a largura e altura
      e aplica um efeito de transição */
   .bookpage img {
-    width: 400px;
+    width: 100%;
     height: 700px;
     transition: all 0.3s ease-in-out;
   }
