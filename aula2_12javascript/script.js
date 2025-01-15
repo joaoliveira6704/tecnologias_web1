@@ -89,7 +89,7 @@ let digits2 = number8.toString();
 
 let reversed = digits2.split("").reverse().join("");
 
-let result6 = digits2 === reversed ? "Capicua" : "Não Capicua";
+let result6 = digits2 == reversed ? "Capicua" : "Não Capicua";
 
 console.log(result6);
 
